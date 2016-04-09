@@ -1,0 +1,22 @@
+<h2 class="title">Projects and Code samples I'm working on.</h2>
+
+<ul>
+  {{#each repos}}
+      <li>
+          <h6>{{name}}
+              <span class="icon-github"></span>
+          </h6>
+        {{#if description }}
+          {{description}}<br>
+        {{/if}}
+          <a href="{{html_url}}" target="_blank">{{name}}</a>
+      </li>
+  {{/each}}
+
+    <li>
+        <h6>Code snippets
+            <small>on Codepen</small>
+        </h6>
+        <a href="http://codepen.io/mromanoff/" target="_blank">POC code snippets</a>
+    </li>
+</ul>

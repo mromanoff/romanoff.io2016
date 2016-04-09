@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+
+.form {
+  background: $color-brand-primary3;
+  text-align: center;
+
+
+  h3 {
+    color: $color-gray-light;
+    text-align: center;
+    font-weight: normal;
+  }
+  h4 {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  //  .control-group {
+  //    &.error input {
+  //      border-bottom: 1px solid $brand-danger;
+  //      border-color: $color-brand-danger;
+  //    }
+  //  }
+
+  input {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: $base-font-family;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 3px;
+  }
+
+  input {
+    -webkit-Appearance: none;
+    display: block;
+    width: 70%;
+    min-width: 70%;
+    max-width: 70%;
+    border: 1px solid white;
+    margin: 10px auto;
+    padding: 12px 30px;
+    background: transparent;
+    color: white;
+    text-align: center;
+
+    &.half {
+      width: 48%;
+      margin: 1% 0;
+    }
+  }
+}

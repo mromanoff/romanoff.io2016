@@ -1,0 +1,76 @@
+
+<h1 class="title">Work</h1>
+
+<nav class="module">
+    <ul class="pagination">
+      {{#if prev}}
+          <li class="pagination__item">
+              <a href="#work?page={{prev}}" class="icon-angle-left" ></a>
+          </li>
+      {{else}}
+          <li class="pagination__item pagination__item--disabled">
+              <a class="icon-angle-left"></a>
+          </li>
+      {{/if}}
+
+      {{#each pages}}
+        {{#if current}}
+            <li class="pagination__item pagination__item--active">
+                <a>{{page}}</a>
+            </li>
+        {{else}}
+            <li class="pagination__item">
+                <a href="#work?page={{page}}">{{page}}</a>
+            </li>
+        {{/if}}
+      {{/each}}
+
+      {{#if next}}
+          <li class="pagination__item">
+              <a href="#work?page={{next}}" class="icon-angle-right"></a>
+          </li>
+      {{else}}
+          <li class="pagination__item pagination__item--disabled">
+              <a class="icon-angle-right"></a>
+          </li>
+      {{/if}}
+    </ul>
+</nav>
+
+<div class="module gallery" data-ui-component="gallery"></div>
+
+<nav class="module">
+    <ul class="pagination">
+      {{#if prev}}
+          <li class="pagination__item">
+              <a href="#work?page={{prev}}" class="icon-angle-left" ></a>
+          </li>
+      {{else}}
+          <li class="pagination__item pagination__item--disabled">
+              <a class="icon-angle-left"></a>
+          </li>
+      {{/if}}
+
+      {{#each pages}}
+        {{#if current}}
+            <li class="pagination__item pagination__item--active">
+                <a>{{page}}</a>
+            </li>
+        {{else}}
+            <li class="pagination__item">
+                <a href="#work?page={{page}}">{{page}}</a>
+            </li>
+        {{/if}}
+      {{/each}}
+
+      {{#if next}}
+          <li class="pagination__item">
+              <a href="#work?page={{next}}" class="icon-angle-right"></a>
+          </li>
+      {{else}}
+          <li class="pagination__item pagination__item--disabled">
+              <a class="icon-angle-right"></a>
+          </li>
+      {{/if}}
+    </ul>
+</nav>

@@ -1,0 +1,52 @@
+
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+
+//body {
+//  color: $base-text-color;
+//  font: 100%/1.3 $base-font-family;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//  -webkit-text-size-adjust: none;
+//  min-width: 320px;
+//}
+
+.page {
+  -webkit-overflow-scrolling: touch;
+}
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+
+img.full-width{
+  height: auto;
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+}
+
+picture {
+  img {
+    height: auto;
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+    vertical-align: middle; /* [3] */
+  }
+}
+
+#nprogress {
+  .bar {
+    background-color: $color-brand-primary5;
+  }
+
+  .peg {
+    box-shadow: 0 0 10px #ff0000, 0 0 5px #ff0000;
+  }
+}

@@ -1,0 +1,64 @@
+<h1 class="title">Contact</h1>
+<h2 class="title">Michael Romanoff</h2>
+
+<section class="module">
+    <p>
+        <img class="" src="/images/me.jpg" alt="Michael Romanoff"/>
+    </p>
+
+    <p>
+        <strong>email:</strong> <a href="mailto:2michael.romanoff@gmail.com">2michael.romanoff [at] gmail.com</a>
+    </p>
+
+    <p>
+        <strong>google hangouts:</strong> zelcie
+    </p>
+</section>
+
+<section class="module module--full-width margin-bottom--zero">
+    <form role="form" class="form padding-vertical--lg">
+      {{#if errors}}
+          <div class="alert error">
+              <ul>
+                {{#each errors}}
+                    <li>{{this}}</li>
+                {{/each}}
+              </ul>
+          </div>
+      {{/if}}
+
+        <h4>Or introduce yourself</h4>
+
+        <h3>Hello! My name is</h3>
+
+        <div class="control-group firstName">
+            <input id="firstName" name="firstName" class="first-name" type="text" maxlength="15"
+                   placeholder="First Name">
+            <span class="help-inline"></span>
+        </div>
+
+        <div class="control-group lastName">
+            <input id="lastName" name="lastName" class="last-name" type="text" maxlength="15"
+                   placeholder="Last Name">
+            <span class="help-inline"></span>
+        </div>
+
+        <h4>Please contact me</h4>
+
+        <div class="control-group email">
+            <input id="email" name="email" type="email" maxlength="50" placeholder="Email Address">
+            <span class="help-inline"></span>
+        </div>
+
+        <div class="control-group phone">
+            <input id="phone" name="phone" type="tel" maxlength="15" placeholder="Phone Number">
+            <span class="help-inline"></span>
+        </div>
+
+        <nav class="button-container centered">
+            <button type="submit" class="primary box button">Contact</button>
+        </nav>
+    </form>
+</section>
+
+

@@ -1,0 +1,18 @@
+<div class="header__menu is-mobile">
+    <a href="#" data-action="open-menu" class="btn-hamburger icon-menu"></a>
+    <a href="#" data-action="close-menu" class="btn-hamburger icon-close is-hidden"></a>
+</div>
+
+<h1 class="header__logo">
+    <a href="/">
+        <img class="full-width" src="/images/header-logo.png" alt="romanoff.io">
+    </a>
+</h1>
+
+<div class="header__navigation">
+    <ul class="header__links" data-target="header-links">
+      {{#each primaryItems}}
+          <li class="header__link {{#if active}}header__link--active{{/if}}"><a href="#{{path}}">{{name}}</a></li>
+      {{/each}}
+    </ul>
+</div>

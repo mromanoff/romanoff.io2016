@@ -1,0 +1,156 @@
+$nav-height: 50px;
+
+.header {
+  height: $nav-height;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: $color-navigation-background;
+
+  @include modifier('active') {
+    background-color: $color-navigation-background-active;
+  }
+
+  @include element('menu') {
+    position: absolute;
+    height: $nav-height;
+    right: 0;
+    z-index: 901;
+
+    $transition: all;
+    @include transition($transition);
+
+    .btn-hamburger {
+      display: block;
+      padding-right: $padding-md;
+      padding-left: $padding-md;
+      text-decoration: none;
+      line-height: $nav-height;
+      color: $color-navigation-links-hover;
+    }
+  }
+
+  @include element('logo') {
+    width: 160px;
+    line-height: $nav-height;
+    margin-left: $margin-md;
+  }
+
+  @include element('navigation') {
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+
+    $transition: all;
+    @include transition($transition);
+  }
+
+  @include element('links') {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: $color-navigation-background-active;
+    top: 0;
+    z-index: 999;
+
+    $transition: all;
+    @include transition($transition);
+
+    @include modifier('open') {
+      height: 100%;
+      padding-top: $nav-height;
+    }
+  }
+
+  @include element('link') {
+    display: block;
+    text-align: center;
+    margin-bottom: $margin-sm;
+
+    a {
+      color: $color-navigation-links;
+      font-size: 20px;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+
+    @include modifier('active') {
+      a {
+        color: $color-navigation-links-active;
+      }
+    }
+  }
+}
+
+@media (min-width: $medium-screen-min) {
+  $nav-height: 130px;
+
+  .header {
+    height: $nav-height;
+
+    @include element('logo') {
+      width: 311px;
+      margin: $margin-md 0 $margin-md $margin-lg;
+    }
+
+    @include element('links') {
+      position: static;
+      padding: 0;
+      height: initial;
+      background-color: transparent;
+      margin-left: $margin-lg;
+    }
+
+    @include element('link') {
+      display: inline-block;
+      text-align: left;
+
+      a {
+        font-size: 13px;
+        margin-right: 10px;
+        letter-spacing: 2.5px;
+        font-weight: bold;
+      }
+
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $large-screen-min) {
+  $nav-height: 60px;
+
+  .header {
+    height: $nav-height;
+
+    @include element('logo') {
+      float: left;
+      width: 206px;
+      margin: 0 0 0 $margin-lg;
+      line-height: $nav-height - 4; //tune up
+    }
+
+    @include element('navigation') {
+      position: static;
+      width: auto;
+      float: left;
+    }
+
+    @include element('links') {
+      float: left;
+      margin-left: $margin-lg;
+    }
+
+    @include element('link') {
+      margin: 0;
+      a {
+        line-height: $nav-height;
+      }
+    }
+  }
+}

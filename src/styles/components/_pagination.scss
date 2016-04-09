@@ -1,0 +1,42 @@
+//.pagination, .sort {
+.pagination {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @include element('item') {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: $color-gray-dark;
+    font-size: $font-xs;
+    color: $color-white;
+
+    $icons-transition: background, color;
+    @include transition($icons-transition);
+
+    &:hover {
+      background-color: $color-gray;
+    }
+
+    @include modifier('active') {
+      background-color: $color-brand-primary5;
+    }
+
+    @include modifier('disabled') {
+      background-color: $color-gray-light;
+      color: $color-gray;
+    }
+
+    a {
+      line-height: 40px;
+      display: block;
+      color: $color-white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

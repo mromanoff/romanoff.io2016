@@ -1,0 +1,73 @@
+
+.overview {
+
+  @include element('hero') {
+    height: 200px;
+    background: #ccc;
+    margin-bottom: $margin-lg;
+  }
+
+  @include element('award-image') {
+    width: 120px;
+    margin: $margin-md auto;
+    display: block;
+  }
+
+  @include element('preview') {
+    list-style: none;
+
+    lost-utility: clearfix;
+
+    li {
+      lost-column: 1/2 2 1rem;
+      margin-bottom: $margin-md;
+    }
+
+    $image-transition: opacity;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid $color-black;
+      opacity: 1;
+      &:hover {
+        @include transition($image-transition);
+        opacity: .9;
+      }
+    }
+  }
+
+  @include element('work') {
+    min-height: 200px;
+    background: #ccc;
+    margin-bottom: $margin-lg;
+  }
+
+  @include element('photography') {
+    min-height: 200px;
+    background: #ccc;
+    margin-bottom: $margin-lg;
+  }
+
+  @include element('code') {
+    min-height: 200px;
+    background: #ccc;
+    margin-bottom: $margin-lg;
+
+    text-align: center;
+    li {
+      //margin-bottom: $default-margin * 2;
+    }
+    span {
+      display: block;
+      //font-size: $font-small * 2;
+      //color: $gray-light;
+    }
+    //  small {
+    //    font-size: $font-smaller;
+    //    display: block;
+    //  }
+
+
+  }
+}

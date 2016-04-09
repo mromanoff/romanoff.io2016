@@ -1,0 +1,44 @@
+<h1 class="title">Photography</h1>
+
+<nav class="module">
+    <ul class="pagination">
+      {{#pagination pagination type="previous"}}
+          <li class="pagination__item{{#if disabled}} pagination__item--disabled{{/if}}">
+              <a class="icon-angle-left" href="#photography?page={{n}}"></a>
+          </li>
+      {{/pagination}}
+      {{#pagination pagination type="middle" limit="5"}}
+          <li class="pagination__item{{#if active}} pagination__item--active{{/if}}">
+              <a href="#photography?page={{n}}">{{n}}</a>
+          </li>
+      {{/pagination}}
+      {{#pagination pagination type="next"}}
+          <li class="pagination__item{{#if disabled}} pagination__item--disabled{{/if}}">
+              <a class="icon-angle-right" href="#photography?page={{n}}"></a>
+          </li>
+      {{/pagination}}
+    </ul>
+</nav>
+
+<div class="module gallery" data-ui-component="gallery"></div>
+
+<nav class="module">
+    <ul class="pagination">
+      {{#pagination pagination type="previous"}}
+          <li class="pagination__item{{#if disabled}} pagination__item--disabled{{/if}}">
+              <a class="icon-angle-left" href="#photography?page={{n}}"></a>
+          </li>
+      {{/pagination}}
+      {{#pagination pagination type="middle" limit="5"}}
+          <li class="pagination__item{{#if active}} pagination__item--active{{/if}}">
+              <a href="#photography?page={{n}}">{{n}}</a>
+          </li>
+      {{/pagination}}
+      {{#pagination pagination type="next"}}
+          <li class="pagination__item{{#if disabled}} pagination__item--disabled{{/if}}">
+              <a class="icon-angle-right" href="#photography?page={{n}}"></a>
+          </li>
+      {{/pagination}}
+    </ul>
+</nav>
+

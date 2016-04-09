@@ -1,0 +1,56 @@
+/**
+ * objects/_layout.scss
+ */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+$nav-height: 50px;
+
+.application {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: $nav-height + 1;
+
+}
+
+@include bp-more-than($medium-screen-min) {
+  $nav-height: 130px;
+
+  .application {
+    padding-top: $nav-height + 1;
+  }
+}
+
+@include bp-more-than($large-screen-min) {
+  $nav-height: 60px;
+
+  .application {
+    padding-top: $nav-height + 1;
+  }
+}
+
+
+/* Contain floats
+   ========================================================================== */
+
+.clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
+
+/* Floats
+   ========================================================================== */
+
+.float--none { float: none !important; }
+
+.float--left { float: left !important; }
+
+.float--right { float: right !important; }

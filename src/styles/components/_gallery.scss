@@ -1,0 +1,44 @@
+.gallery {
+
+  text-align: center;
+  //padding: 0 $section-side-padding;
+
+  lost-utility: clearfix;
+
+  @include element('item') {
+    lost-column: 1/2 2 1rem;
+    margin-bottom: $margin-md;
+
+    img {
+      $image-transition: all;
+      @include transition($image-transition);
+
+      width: 100%;
+      height: auto;
+      border: 1px solid $color-black;
+      opacity: 1;
+      &:hover {
+        @include transition($image-transition);
+        opacity: .9;
+      }
+    }
+  }
+}
+
+@include bp-more-than ($medium-screen-min) {
+  .gallery {
+
+    @include element('item') {
+      lost-column: 1/3 3 1rem;
+    }
+  }
+}
+
+@include bp-more-than ($large-screen-min) {
+  .gallery {
+
+    @include element('item') {
+      lost-column: 1/4 4 1rem;
+    }
+  }
+}

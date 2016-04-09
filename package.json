@@ -1,0 +1,127 @@
+{
+  "name": "marionette-wires",
+  "version": "0.0.0",
+  "description": "Starter kit for Marionette.js Applications using Browserify",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp build && node server",
+    "watch": "gulp watch",
+    "test": "gulp test",
+    "integration": "pioneer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thejameskyle/marionette-wires.git"
+  },
+  "keywords": [
+    "marionette",
+    "browserify",
+    "backbone"
+  ],
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejameskyle/marionette-wires/issues"
+  },
+  "homepage": "https://github.com/thejameskyle/marionette-wires",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel": "^6.1.18",
+    "babel-polyfill": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
+    "bluebird": "^3.0.5",
+    "body-parser": "^1.10.1",
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.2",
+    "chai": "^3.4.1",
+    "del": "^2.1.0",
+    "express": "^4.11.0",
+    "gulp": "^3.8.10",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-env": "^0.2.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-symlink": "^2.1.0",
+    "gulp-util": "^3.0.2",
+    "gulp-watch": "^4.3.5",
+    "hbsfy": "^2.2.1",
+    "jsdom": "^7.1.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "lost": "^6.7.2",
+    "minimatch": "^3.0.0",
+    "mocha": "^2.1.0",
+    "morgan": "^1.5.1",
+    "pioneer": "^0.11.0",
+    "proxyquire": "^1.7.3",
+    "request": "^2.51.0",
+    "selenium-webdriver": "^2.44.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^3.6.1",
+    "yargs": "^3.30.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.1.1",
+    "backbone": "1.2.3",
+    "backbone-query-parameters": "jhudson8/backbone-query-parameters",
+    "backbone-routing": "^0.2.0",
+    "backbone-service-modals": "^0.2.0",
+    "backbone.marionette": "^2.4.4",
+    "backbone.radio": "^1.0.2",
+    "backbone.service": "^0.5.0",
+    "backbone.storage": "^0.2.1",
+    "backbone.syphon": "^0.6.3",
+    "bootstrap": "^3.3.6",
+    "browserify-swap": "^0.2.1",
+    "handlebars": "^4.0.5",
+    "handlebars-paginate": "^0.1.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "nprogress": "^0.2.0"
+  },
+  "browser": {
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js"
+  },
+  "browserify-shim": {
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "browserify-swap": {
+    "@packages": [
+      "underscore"
+    ],
+    "dist": {
+      "underscore.js$": "lodash"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      [
+        "hbsfy",
+        {
+          "extensions": [
+            "hbs"
+          ]
+        }
+      ],
+      "browserify-swap",
+      "browserify-shim"
+    ]
+  }
+}

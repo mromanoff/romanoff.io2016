@@ -1,0 +1,21 @@
+<header>
+    <picture>
+        <!-- Add Fallback for IE9 -->
+        <!--[if IE 9]>
+      <video style="display: none;"><![endif]-->
+        <source srcset="{{small}}" media="(max-width: 768px)">
+        <source srcset="{{medium}}" media="(max-width: 1280px)">
+        <source srcset="{{large}}" media="(max-width: 1920px)">
+        <source srcset="{{extraLarge}}" media="(max-width: 4000px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="{{small}}" alt="{{alt}}"/>
+    </picture>
+    <h2 class="hero-title">
+          <span>
+            <span>{{title}}</span>
+            {{#if subTitle}}
+                <small>{{subTitle}}</small>
+            {{/if}}
+          </span>
+    </h2>
+</header>

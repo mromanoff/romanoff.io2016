@@ -1,0 +1,19 @@
+/**
+ * components/_main.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "header";
+@import "footer";
+//@import "page-title";
+@import "buttons";
+@import "pagination";
+@import "gallery";
+
+
+// pages
+@import "overview-page";
+

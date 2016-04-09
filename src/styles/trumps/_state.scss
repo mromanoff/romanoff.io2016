@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    #Responsive visibility states
+\*------------------------------------*/
+
+@mixin hide() {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.hide {
+  @include hide();
+}
+
+
+// Mobile
+.is-tablet, .is-desktop, .is-desktop-large, .hidden {
+  display: none !important;
+}
+
+.is-mobile {
+  display: block !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+// Tablet
+@include bp-between ($medium-screen-min, $medium-screen-max) {
+    .is-mobile {
+      display: none !important;
+    }
+
+    .is-tablet {
+      display: block !important;
+    }
+
+    .is-hidden {
+      display: none !important;
+    }
+}
+
+// Desktop
+@include bp-between ($large-screen-min, $large-screen-max) {
+  .is-tablet, .is-mobile {
+    display: none !important;
+  }
+
+  .is-desktop {
+    display: block !important;
+  }
+
+  .is-hidden {
+    display: none !important;
+  }
+}
+
+// Extra Large Screen
+@include bp-more-than ($extra-large-screen-min) {
+  .is-tablet, .is-mobile {
+    display: none !important;
+  }
+
+  .is-desktop {
+    display: block !important;
+  }
+
+  .is-hidden {
+    display: none !important;
+  }
+}

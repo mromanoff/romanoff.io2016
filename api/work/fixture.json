@@ -1,0 +1,286 @@
+[
+  {
+    "_id": {
+      "$oid": "54ae002734e302214cb40c29"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "J2FIT",
+    "url": "http://j2fit.com",
+    "image": "j2fit.jpg",
+    "description": "J2Fit (Journey To Fitness) is a team of expert fitness professionals who specialize in providing coaching in strength training, conditioning and nutrition. They required a responsive site as well as custom photography that could be accessible from multiple devices to advertise their varied health services.",
+    "information": "Photography, Web Development, Wordpress, Bootstrap, LESS, CSS, HTML5, JavaScript, jQuery, Responsive Design",
+    "client": [
+      {
+        "name": "J2FIT",
+        "url": "http://j2fit.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002734e302214cb40c2a"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Blink Fitness",
+    "url": "http://blinkfitness.com/",
+    "image": "blinkfitness.jpg",
+    "description": "Blink Fitness is a leader in affordable fitness. Blink offers the cleanest, friendliest gyms you can find, this makes blink stand out in a crowd. Their website was built to fit the brand image and reach a large demographic of mobile users. In addition to the marketing site, Blink web presence includes a member portal and in club kiosks.",
+    "information": "Senior Front End Developer, .NET, CSS, CSS3, LESS, Bootstrap, HTML5, JavaScript, jQuery, Responsive Design",
+    "client": [
+      {
+        "name": "BlinkFitness by Equinox",
+        "url": "http://blinkfitness.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002734e302214cb40c2b"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Equinox",
+    "url": "http://equinox.com/",
+    "image": "equinox.jpg",
+    "description": "Equinox - It's not Fitness. It's Life. For over 20 years, Equinox fitness clubs have provided an unparalleled member experience, setting new standards from personal training to group fitness to rejuvenating wellness treatments. The results are extraordinary. Tour the clubs and experience what ESPN calls \"the best gym in America.\" Featuring innovative group fitness classes, luxurious spas, exclusive boutiques and nourishing cafes, Equinox clubs provide members with an inviting and exhilarating fitness experience.",
+    "information": "Senior Front End Developer, CSS, SASS, Compass, Susy, HTML5, JavaScript, jQuery, Backbone.JS, Underscore.JS, Require.JS, Node.JS, .NET",
+    "client": [
+      {
+        "name": "Equinox",
+        "url": "http://equinox.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002734e302214cb40c2c"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "QBlog by Equinox",
+    "url": "http://q.equinox.com/",
+    "image": "qblog.jpg",
+    "description": "Q is Equinox’s editorial site that was created to change the conversation on fitness and wellness by presenting it in an elevated way. It was key for Equinox to have Q content delivered to fit all devices, our recent redesign included a complete responsive overhaul so that content can be delivered legibly and increase subscriptions.",
+    "information": "Senior Front End Developer, .NET, CSS, CSS3, SASS, Bootstrap 3, HTML5, JavaScript, jQuery, Responsive Design",
+    "client": [
+      {
+        "name": "QBlog by Equinox",
+        "url": "http://q.equinox.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002734e302214cb40c2d"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "New York Color",
+    "url": "http://newyorkcolor.com/",
+    "image": "new_york_color.jpg",
+    "description": "New York Color is highly popular discount beauty brand targeted towards teens and young adults. The New York Color website showcases the offerings of the brand's beauty products that can be found at most drug stores and major retailers. Other content includes a store locator, tips, tutorials, inspiration articles, press exposure, and promotions. Visitors are also able to request samples/communications from the company.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c2e"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Playboy Fragrances",
+    "url": "http://www.playboyfragrances.com/",
+    "image": "playboy_fragrances.jpg",
+    "description": "This interactive website showcases the various offerings of the brand's \"For Him\" and \"For Her\" line of fragrances. The site houses photo galleries, editorial content, virtual tours, interviews, quizzes, and a history of the magazine. Playboy Fragrances also allows users to set up their own personal profiles with The Seduction Club. Here users can interact with the site in order to gain points and unlock goodies.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c2f"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Halle Berry Fragrances",
+    "url": "http://halleberryfragrances.com/",
+    "image": "halle_berry.jpg",
+    "description": "The concept behind the Halle Berry fragrance line is that each woman has many facets and Halle Berry has a scent for each. There are three parts to the site, one per fragrance, “Reveal”, “Pure Orchid” and “Halle”. As the user rolls over each scent they are directed to page that displays how the scent came to be, media and a view of the collection.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c35"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Master Card Marketing Center",
+    "url": false,
+    "image": "mastercard.jpg",
+    "description": "This is a worldwide Intranet system for MasterCard executives and top-level employees. Here they are free to explore and order MasterCard brand items to gift to valued customers. The site also features consumer insights and training materials.",
+    "information": "HTML, CSS, Photoshop, JavaScript, jQuery",
+    "client": [
+      {
+        "name": "RGA",
+        "url": false
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c30"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Astor Cosmetics",
+    "url": "http://astorcosmetics.com/",
+    "image": "astor.jpg",
+    "description": "Astor is a well known European cosmetic brand focused on enhancing a woman’s natural beauty. The Astor Cosmetics site showcases the various product lines from skin care and makeup to nail care. Users can sign in to create a basic profile where they save items that sparked their interest. The site also features makeup news, tips and tutorials with behind the scenes footage of Artistic Advisor and fashion icon Heidi Klum.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c31"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Guess Parfums",
+    "url": "http://guessparfums.com/",
+    "image": "guess_seductive.jpg",
+    "description": "Home of the GUESS fragrance brand, this interactive site showcases the product line, promotions, features a store locator and asks users to join in on the conversation. The site features three unforgettable women with their love stories from the perspective of their lovers. GUESS asks users, “Are you a legend in the making?” prompting them to share their stories on Facebook.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c32"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Sally Hansen",
+    "url": "http://www.sallyhansen.com/",
+    "image": "sally_hansen.jpg",
+    "description": "They’ve come a long way from being just the master of nail care, today Sally Hansen is an all encompassing beauty brand that specializes in everything from makeup and hair removal to, of course, nail care. This site showcases the extensive product lines as well as featuring tutorials, quizzes and advice. The highlight of the site is an interactive nail product selector that helps you to determine the perfect look and product recommendation for you.",
+    "information": "Drupal 6, CSS, CSS3, HTML5, JavaScript, jQuery, Modernizr, JW Player",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c33"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "Project Focus",
+    "url": "http://www2.witness.org/project-focus/?q=project-focus/",
+    "image": "witness.jpg",
+    "description": "WITNESS uses video to open the eyes of the world to human rights violations. This interactive online experience was built in conjunction with a charity drive to help gain donations. The user is welcomed by a blurry video and a voice over, a button Appears asking them to “open their eyes”, as the user clicks, the video becomes clearer. At the end, they are asked to “Help change the picture, click to donate.” The drive was highly successful, a substantial amount of money was raised. As a result of the press that came from the online experience, there was also an increase in both new membership and existing membership participation.",
+    "information": "HTML5, CSS3, JavaScript, jQuery, PHP, JWPlayer",
+    "client": [
+      {
+        "name": "COTY",
+        "url": "http://www.coty.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c34"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "resident",
+    "url": "http://www.weareresident.com/",
+    "image": "weareresident.jpg",
+    "description": "This site showcases the New York based creative studio’s digital portfolio with clients that include Coldplay, Candies, Crest, Heineken, Jeep, Kanye West, Samsung, Time Warner Cable and more with easy access to contact information and a list of offerings. The site is clean and simple with fast loading expandable videos that display the studio’s various talents and showreel.",
+    "information": "Design, Flash, Action Script 2, HTML, CSS, PHP",
+    "client": [
+      {
+        "name": "resident",
+        "url": "http://www.weareresident.com"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "54ae002834e302214cb40c36"
+    },
+    "visible": true,
+    "category": "work",
+    "name": "myalli",
+    "url": "http://www.myalli.com",
+    "image": "myalli.jpg",
+    "description": "My Alli is a weight loss supplement paired with a 24-week motivational program that includes check-in’s with a motivational online community and support system, interactive tools, success stories and product information. The My Alli site has been nominated for The 14th Annual Webby Awards in the Pharmaceuticals category. The Webby Awards is the leading international award honoring excellence on the Internet. The Webby Awards are presented by The International Academy of Digital Arts and Sciences. For more information and the full list of Nominees and Honorees, visit http://www.webbyawards.com.",
+    "information": "HTML, CSS, JavaScript, jQuery, Ajax, Pluck 4, .NET, Photoshop",
+    "client": [
+      {
+        "name": "GlaxoSmithKline",
+        "url": "http://www.gsk.com"
+      },
+      {
+        "name": "RAPP",
+        "url": "http://www.rApp.com"
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+// scss-lint:disable VendorPrefixes, ColorVariable
+
+/**
+ * settings/_colors.scss
+ */
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* Core
+   ========================================================================== */
+
+$color-black: #000000 !default;
+$color-white: #ffffff !default;
+$transparent: transparent !default;
+
+/* Greys
+   ========================================================================== */
+$color-gray-darker: #222222;
+$color-gray-dark: #343434;
+$color-gray: #555555;
+$color-gray-light: #999999;
+$color-gray-lighter: #EEEEEE;
+
+
+/* Brand colors
+   ========================================================================== */
+// based on https://color.adobe.com/Roles1-color-theme-1814741/
+
+$color-brand-primary: #94090D;
+$color-brand-primary2: #E9967A;
+$color-brand-primary3: #483D8B;
+$color-brand-primary4: #263248;
+$color-brand-primary5: #FFA000;
+
+$color-brand-success: #5CB85C;
+$color-brand-warning: #FF8C00;
+$color-brand-danger: #D40D12;
+$color-brand-info: #5BC0DE;
+
+
+/* Typography
+   ========================================================================== */
+$base-font-color: $color-black !default;
+$base-link-color: $color-black !default;
+$base-heading-color: $base-font-color !default;
+$base-subheading-color: $color-gray !default;
+
+
+
+// Page
+$base-background-color: $color-white;
+$base-text-color: $color-black;
+
+// Navigation Variables
+$color-navigation-background: $color-brand-primary4;
+$color-navigation-background-active: rgba($color-brand-primary4, 0.9);
+
+//Footer
+$color-footer-text: $color-brand-primary2;
+$color-footer-background: $color-brand-primary;
+
+// buttons
+$color-primary-btn-background: $color-brand-primary5;
+
+// Links
+$color-links: $color-black;
+$color-navigation-links:  #7A7A7B;
+$color-navigation-links-hover:  $color-white;
+$color-navigation-links-active:  #cfcfcf;

@@ -1,0 +1,102 @@
+/**
+ * objects/_text.scss
+ */
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+/* Family modifiers
+   ========================================================================== */
+
+//.font-family--arial { font-family: $arial !important; }
+//.font-family--georgia { font-family: $georgia !important; }
+//.font-family--tradegothic { font-family: $tradegothic-bold-condensed !important; }
+//.font-family--gillsans { font-family: $gillsans !important; }
+
+
+/* Title
+   ========================================================================== */
+
+.title {
+  text-align: center;
+  font-weight: 300;
+  margin: $margin-lg auto;
+}
+
+
+/* Size modifiers
+   ========================================================================== */
+
+// Smaller
+.font-size--smaller { font-size: smaller !important; }
+
+// Larger
+.font-size--larger { font-size: larger !important; }
+
+/* Hide
+   ========================================================================== */
+
+.hide-text {
+  /* Method 1 */
+
+  position: absolute;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+
+  /* Method 2 */
+
+  // border: 0;
+  // clip: rect(0 0 0 0);
+  // height: 1px;
+  // margin: -1px;
+  // overflow: hidden;
+  // padding: 0;
+  // position: absolute;
+  // width: 1px;
+
+  /* Method 3 */
+
+  //text-indent: 100%;
+  //white-space: nowrap;
+  //overflow: hidden;
+}
+
+/* Text break
+   ========================================================================== */
+
+.text--break { word-wrap: break-word !important; }
+
+/* Truncate
+   ========================================================================== */
+
+.text--truncate {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+}
+
+/* Transform
+   ========================================================================== */
+
+.text-transform--uppercase { text-transform: uppercase !important; }
+
+/* Alignment
+   ========================================================================== */
+
+/* Right */
+
+.text-align--right { text-align: right !important; }
+
+/* Center */
+
+.text-align--center { text-align: center !important; }
+
+/* Left */
+
+.text-align--left { text-align: left !important; }

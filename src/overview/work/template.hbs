@@ -1,0 +1,10 @@
+<h2 class="title">Recent Work</h2>
+<ul class="overview__preview">
+  {{#each recentWork}}
+      <li>
+          <a href="#work/{{id}}">
+              <img class="full-width" src="/images/work/medium/{{image}}" alt="{{name}}">
+          </a>
+      </li>
+  {{/each}}
+</ul>

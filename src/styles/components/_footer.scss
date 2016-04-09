@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    #PAGE-FOOTER
+\*------------------------------------*/
+
+.footer {
+  color: $color-footer-text;
+  background-color: $color-footer-background;
+  min-height: 270px;
+  padding: $padding-lg 0;
+  text-align: center;
+
+  h4 {
+    letter-spacing: 2.5px;
+    color: $color-footer-text;
+    font-weight: 200;
+  }
+
+  hr {
+    border-color: $color-footer-text;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 $margin-xs;
+  }
+
+  @include element('social-icons') {
+    margin-bottom: $margin-lg;
+
+    a {
+      display: block;
+      width: 3.6rem;
+      height: 3.6rem;
+      line-height: 3.6rem;
+      border-radius: 3.6rem;
+      border: 2px solid $color-footer-text;
+      color: $color-footer-text;
+      font-size: $font-lg;
+      text-decoration: none;
+
+      $icons-transition: background, color;
+      @include transition($icons-transition);
+
+      &:hover {
+        background-color: rgba(215, 48, 48, .5);
+        color: $color-footer-text;
+      }
+    }
+  }
+
+  @include element('links') {
+    letter-spacing: 1.5px;
+    margin: $margin-md 0;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: $font-xs;
+      color: $color-footer-text;
+    }
+  }
+
+  @include element('copyright') {
+    font-size: $font-xs;
+    margin: 0;
+  }
+}

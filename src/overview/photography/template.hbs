@@ -1,0 +1,10 @@
+<h2 class="title">Photography</h2>
+<ul class="overview__preview">
+  {{#each recentPhotography}}
+      <li>
+          <a href="#photography/{{id}}">
+              <img src="{{image_url}}" alt="{{name}}"/>
+          </a>
+      </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,81 @@
+<section class="module margin-top--lg">
+    <nav>
+        <a class="button whtie box small goBack" href="#">Go Back</a>
+    </nav>
+</section>
+
+<section class="module">
+    <img class="full-width" src="{{photo.image_url}}" alt="{{photo.name}}">
+</section>
+
+<section class="module photo-details">
+    <h3>{{photo.name}}</h3>
+  {{#if photo.description}}
+      <p>{{photo.description}}</p>
+  {{/if}}
+
+  {{#if photo.rating}}
+      <p>
+        {{#if photo.votes_count}}
+            <strong>Votes:</strong> {{photo.votes_count}}
+        {{/if}}
+
+        {{#if photo.favorites_count}}
+            <strong>Favorites:</strong> {{photo.favorites_count}}
+        {{/if}}
+
+        {{#if photo.highest_rating}}
+            <strong>Rating:</strong> {{photo.highest_rating}}
+        {{/if}}
+      </p>
+  {{/if}}
+</section>
+
+<section class="module">
+    <nav>
+        <a class="button whtie box small" href="http://500px.com{{photo.url}}" target="_blank">Go Rate this picture</a>
+    </nav>
+</section>
+
+<section class="module photo-details">
+
+  {{#if photo.camera}}
+      <p><strong>Camera:</strong> {{photo.camera}}</p>
+  {{/if}}
+
+  {{#if photo.lens}}
+      <p><strong>Lens:</strong> {{photo.lens}}</p>
+  {{/if}}
+
+  {{#if photo.focal_length}}
+      <p><strong>Focal length:</strong> {{photo.focal_length}}</p>
+  {{/if}}
+
+  {{#if photo.iso}}
+      <p><strong>ISO:</strong> {{photo.iso}}</p>
+  {{/if}}
+
+  {{#if photo.aperture}}
+      <p><strong>Aperture:</strong> {{photo.aperture}}</p>
+  {{/if}}
+
+</section>
+
+{{#if comments}}
+    <section class="module comments">
+        <h2 class="title">Comments:</h2>
+      {{#each comments}}
+          <p>
+              <img class="gravatar" src="{{user.userpic_url}}" alt="{{user.fullname}}">
+            {{user.fullname}}
+            {{#if user.country}}
+                from {{user.country}}
+            {{/if}}
+              <br>
+            {{body}}
+          </p>
+      {{/each}}
+    </section>
+{{/if}}
+
+
