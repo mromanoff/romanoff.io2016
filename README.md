@@ -1,40 +1,47 @@
-Marionette Wires
-================
+Romanoff.io web site
+=================
 
-An opinionated example application built with Marionette.js.
+[![Dependency Status](https://david-dm.org/mromanoff/romanoff.io.svg?style=flat-square)](https://david-dm.org/mromanoff/romanoff.io)
+[![devDependency Status](https://david-dm.org/mromanoff/romanoff.io/dev-status.svg?style=flat-square)](https://david-dm.org/mromanoff/romanoff.io#info=devDependencies)
 
-## Quick start
 
-[Clone](http://git-scm.com/docs/git-clone) or [download](https://github.com/thejameskyle/marionette-wires/archive/master.zip) this repo.
+WEB SITE: http://romanoff.io
 
-```sh
-git clone https://github.com/thejameskyle/marionette-wires.git && cd marionette-wires
-```
 
-Make sure [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.org/) are
-[installed](http://nodejs.org/download/).
+### TODO: ###
 
-```sh
+This site build with:
+FrontEnd: BackboneJS, MarionetteJS, Underscore, jQuery, Gulp, Mocha, PostCSS, IcoMoon, Picturefill
+
+Built in testing support for: Mocha with Chai.
+
+
+## Documentation ##
+
+View the Backbone here:
+[GitHub Wiki](https://github.com/jashkenas/backbone/wiki)
+
+View Backbone.Marionette:
+[GitHub Wiki](https://github.com/marionettejs/backbone.marionette)
+
+View IcoMoon documentation here:
+[IcoMoon docs](http://icomoon.io/#docs)
+
+View Picturefill project:
+[GitHub] (https://github.com/scottjehl/picturefill)
+
+
+``` bash
+# Install dependencies.
 npm install
-npm install -g gulp
+
+
+## Build process ##
+
+# To run the build process, run the default Gulp task.
 gulp
 ```
 
-Once that's done, open up http://localhost:9000/ in your browser.
-
-## Guide
-
-There are additional `README.md` files all throughout the application. However, the documentation is a work in progress.
-
-As a general rule, be sure to read through all of the source code yourself and make sure you understand what is happening.
-
-| Directories | Purpose |
-| ---:|:--- |
-| [api](./api) | Mock api routes |
-| [dist](./dist) | Built assets |
-| [src](./src) | Source files |
-| [test](./test) | Test files |
-
-===
-
-&copy; 2014 James Kyle. Distributed under [ISC license](LICENSE.md).
+## License ##
+Copyright © 2016 Michael Romanoff
+Licensed under the MIT license.
