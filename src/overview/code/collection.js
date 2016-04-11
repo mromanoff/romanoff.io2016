@@ -3,7 +3,6 @@
  * @type {exports}
  */
 
-//var Model = require('../common/model');
 var Backbone = require('backbone');
 
 var API = {
@@ -12,7 +11,7 @@ var API = {
 };
 
 module.exports = Backbone.Collection.extend({
-  url: function() {
+  url() {
     return API.url + '?sort=' + API.sort;
   }
 });

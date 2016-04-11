@@ -1,3 +1,9 @@
+/**
+ * Work Collection
+ * @type {exports}
+ */
+
+
 import {Collection} from 'backbone';
 import Model from './model';
 

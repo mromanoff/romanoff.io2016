@@ -83,19 +83,19 @@
     "backbone.service": "^0.5.0",
     "backbone.storage": "^0.2.1",
     "backbone.syphon": "^0.6.3",
-    "bootstrap": "^3.3.6",
     "browserify-swap": "^0.2.1",
     "handlebars": "^4.0.5",
     "handlebars-paginate": "^0.1.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "picturefill": "^3.0.2"
   },
   "browser": {
-    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js"
+    "owl.carousel": "./bower_components/owl.carousel/dist/owl.carousel.js"
   },
   "browserify-shim": {
-    "bootstrap": {
+    "owl.carousel": {
       "depends": [
         "jquery:jQuery"
       ]

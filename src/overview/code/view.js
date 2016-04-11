@@ -3,13 +3,13 @@
  * @type {Marionette.ItemView|exports}
  */
 
-var View = require('../../common/view');
+import {ItemView} from 'backbone.marionette';
 var template = require('./template.hbs');
 
-module.exports = View.extend({
+module.exports = ItemView.extend({
     template: template,
 
-    serializeData: function () {
+    serializeData() {
         return {
             repos: this.collection.toJSON().slice(0, 5)
         };

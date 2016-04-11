@@ -1,0 +1,60 @@
+/**
+ * Overview Route
+ * @type {exports}
+ */
+
+import {Route} from 'backbone-routing';
+import HeroView from 'hero/composite-view';
+import WorkView from './work/view';
+import PhotographyView from './photography/view';
+import CodeView from './code/view';
+
+import heroStorage from './hero/storage';
+import workStorage from '../work/storage';
+import photographyStorage from '../photography/storage';
+import codeStorage from './code/storage';
+
+
+export default Route.extend({
+  initialize(options = {}) {
+    this.layout = options.layout;
+    this.listenTo(this, 'fetch', this.onFetch);
+  },
+
+  fetch() {
+    return Promise.all([
+      heroStorage.findAll(),
+      workStorage.findAll(),
+      photographyStorage.findAll(),
+      codeStorage.findAll()
+    ]).then(function(collection) {
+      this.heroCollection = collection[0];
+      this.workCollection = collection[1];
+      this.photographyCollection = collection[2];
+      this.codeCollection = collection[3];
+    }.bind(this));
+  },
+
+  render() {
+    this.heroView = new HeroView({
+      collection: this.heroCollection
+    });
+
+    this.workView = new WorkView({
+      collection: this.workCollection
+    });
+
+    this.photographyView = new PhotographyView({
+      collection: this.photographyCollection
+    });
+
+    this.codeView = new CodeView({
+      collection: this.codeCollection
+    });
+
+    this.layout.hero.show(this.heroView);
+    this.layout.work.show(this.workView);
+    this.layout.photography.show(this.photographyView);
+    this.layout.code.show(this.codeView);
+  }
+});
