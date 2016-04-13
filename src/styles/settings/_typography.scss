@@ -12,20 +12,20 @@
 $graphik-web: 'Graphik Web', sans-serif !default;
 
 
-$georgia: Georgia, Times, 'Times New Roman', serif !default;
-$tradegothic-bold-condensed: 'TradeGothicLT-BoldCondTwenty' !default;
+//$georgia: Georgia, Times, 'Times New Roman', serif !default;
+//$tradegothic-bold-condensed: 'TradeGothicLT-BoldCondTwenty' !default;
 $gillsans: 'GillSansMTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 /* Base styles
    ========================================================================== */
 
 $sans-serif: $graphik-web !default;
-$serif: $georgia !default;
+//$serif: $georgia !default;
 
 $display-heading: $graphik-web !default;
 $sub-heading: $gillsans !default;
-$body-heading: $gillsans !default;
-$intro: $serif !default;
+//$body-heading: $gillsans !default;
+//$intro: $serif !default;
 
 $base-font-family: $sans-serif !default;
 

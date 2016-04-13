@@ -12,7 +12,7 @@ $nav-height: 50px;
   position: relative;
   height: 100%;
   width: 100%;
-  padding-top: $nav-height + 1;
+  padding-top: $nav-height;
 
 }
 
@@ -20,7 +20,7 @@ $nav-height: 50px;
   $nav-height: 130px;
 
   .application {
-    padding-top: $nav-height + 1;
+    padding-top: $nav-height;
   }
 }
 
@@ -28,7 +28,7 @@ $nav-height: 50px;
   $nav-height: 60px;
 
   .application {
-    padding-top: $nav-height + 1;
+    padding-top: $nav-height;
   }
 }
 

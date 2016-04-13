@@ -9,9 +9,6 @@ import HeaderService from './header/service';
 import FooterService from './footer/service';
 import FlashesService from './flashes/service';
 
-// import IndexRouter from './index/router';
-// import ColorsRouter from './colors/router';
-// import BooksRouter from './books/router';
 import OverviewRouter from './overview/router';
 import WorkRouter from './work/router';
 import PhotographyRouter from './photography/router';
@@ -41,18 +38,6 @@ $(document).ajaxError(() => {
     title: 'Server Error'
   });
 });
-
-// app.index = new IndexRouter({
-//   container: app.layout.content
-// });
-
-// app.colors = new ColorsRouter({
-//   container: app.layout.content
-// });
-//
-// app.books = new BooksRouter({
-//   container: app.layout.content
-// });
 
 app.overview = new OverviewRouter({
   container: app.layout.content

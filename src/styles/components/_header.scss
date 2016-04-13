@@ -1,6 +1,7 @@
 $nav-height: 50px;
 
 .header {
+  z-index: 100;
   height: $nav-height;
   position: fixed;
   width: 100%;

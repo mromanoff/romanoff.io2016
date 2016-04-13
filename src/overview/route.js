@@ -4,7 +4,7 @@
  */
 
 import {Route} from 'backbone-routing';
-import HeroView from 'hero/composite-view';
+import HeroView from './hero/composite-view';
 import WorkView from './work/view';
 import PhotographyView from './photography/view';
 import CodeView from './code/view';
@@ -14,6 +14,13 @@ import workStorage from '../work/storage';
 import photographyStorage from '../photography/storage';
 import codeStorage from './code/storage';
 
+
+let components = [
+  'hero',
+  'work',
+  'photography',
+  'code'
+];
 
 export default Route.extend({
   initialize(options = {}) {
@@ -27,11 +34,8 @@ export default Route.extend({
       workStorage.findAll(),
       photographyStorage.findAll(),
       codeStorage.findAll()
-    ]).then(function(collection) {
-      this.heroCollection = collection[0];
-      this.workCollection = collection[1];
-      this.photographyCollection = collection[2];
-      this.codeCollection = collection[3];
+    ]).then(function(collections) {
+      collections.forEach(this.createCollection.bind(this));
     }.bind(this));
   },
 
@@ -56,5 +60,9 @@ export default Route.extend({
     this.layout.work.show(this.workView);
     this.layout.photography.show(this.photographyView);
     this.layout.code.show(this.codeView);
+  },
+
+  createCollection(collection, index) {
+    return this[components[index] + 'Collection'] = collection;
   }
 });

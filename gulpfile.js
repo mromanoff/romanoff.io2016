@@ -149,8 +149,9 @@ gulp.task('build', [
   'images',
   'fonts',
   'styles',
-  'scripts',
-  'test'
+  'scripts'
+  //,
+  //'test'
 ]);
 
 gulp.task('test', [

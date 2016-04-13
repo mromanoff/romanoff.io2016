@@ -2,8 +2,6 @@
 .overview {
 
   @include element('hero') {
-    height: 200px;
-    background: #ccc;
     margin-bottom: $margin-lg;
   }
 
@@ -14,6 +12,7 @@
   }
 
   @include element('preview') {
+    padding-left: 0;
     list-style: none;
 
     lost-utility: clearfix;
@@ -38,36 +37,29 @@
   }
 
   @include element('work') {
-    min-height: 200px;
-    background: #ccc;
     margin-bottom: $margin-lg;
   }
 
   @include element('photography') {
-    min-height: 200px;
-    background: #ccc;
     margin-bottom: $margin-lg;
   }
 
   @include element('code') {
-    min-height: 200px;
-    background: #ccc;
     margin-bottom: $margin-lg;
-
     text-align: center;
+
     li {
-      //margin-bottom: $default-margin * 2;
+      margin-bottom: $margin-lg;
     }
     span {
       display: block;
-      //font-size: $font-small * 2;
-      //color: $gray-light;
+      font-size: $font-md * 2;
+      color: $color-gray-light;
     }
-    //  small {
-    //    font-size: $font-smaller;
-    //    display: block;
-    //  }
 
-
+    small {
+      font-size: $font-sm;
+      display: block;
+    }
   }
 }

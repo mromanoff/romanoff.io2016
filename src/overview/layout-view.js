@@ -10,7 +10,7 @@ import template from './layout-template.hbs';
 export default LayoutView.extend({
   template: template,
   tagName: 'main',
-  className: 'overview overview--index container',
+  className: 'overview overview--index',
 
   regions: {
     hero: '.overview__hero',

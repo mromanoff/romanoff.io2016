@@ -7,12 +7,5 @@ import template from './item-template.hbs';
 
 export default ItemView.extend({
   template: template,
-  className: 'item hero-item'
-
-  //,
-
-  //TODO: why you need this?
-  // serializeData() {
-  //   return this.model.toJSON();
-  // }
+  className: 'hero__item'
 });
