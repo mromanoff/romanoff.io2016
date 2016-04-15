@@ -13,30 +13,7 @@
     margin-bottom: $margin-lg * 2;
   }
 
-  @include modifier('full-width') {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-
-  // Margin, Padding Exceptions
-
-  //&.no-gutter {
-  //  margin-top: 0;
-  //  padding-top: 0;
-  //  margin-bottom: 0;
-  //  padding-bottom: 0;
-  //}
-  //
-  //&.no-gutter-top {
-  //  margin-top: 0;
-  //  padding-top: 0;
-  //}
-  //
-  //&.no-gutter-bottom {
-  //  margin-bottom: 0;
-  //  padding-bottom: 0;
-  //}
-
+  //TODO: doesn't belong here
   p {
     letter-spacing: 1px;
     text-align: center;
@@ -44,17 +21,17 @@
 }
 
 
-
-@media (min-width: $medium-screen-min) {
-  .module {
-    margin-bottom: $margin-lg;
-  }
-}
-
-@media (min-width: $large-screen-min) {
-  .module {
-    max-width: $large-screen-max;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+//
+//@media (min-width: $medium-screen-min) {
+//  .module {
+//    margin-bottom: $margin-lg;
+//  }
+//}
+//
+//@media (min-width: $large-screen-min) {
+//  .module {
+//    max-width: $large-screen-max;
+//    margin-left: auto;
+//    margin-right: auto;
+//  }
+//}

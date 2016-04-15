@@ -25,3 +25,8 @@
   }
 }
 
+@include bp-more-than ($extra-large-screen-min) {
+  .container {
+    max-width: $extra-large-screen-min;
+  }
+}

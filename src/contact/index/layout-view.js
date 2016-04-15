@@ -14,7 +14,7 @@ import template from './layout-template.hbs';
 export default LayoutView.extend({
   template: template,
   tagName: 'main',
-  className: 'contact contact--index container',
+  className: 'contact contact--index',
 
   initialize() {
     _.bindAll(this, 'handleSaveSuccess');

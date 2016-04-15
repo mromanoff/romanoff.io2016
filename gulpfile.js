@@ -28,13 +28,10 @@ function onError (err) {
 }
 
 
-
 var api = require('./api/api');
 
 gulp.task('clean', function (cb) {
-  return del([
-    'app/tmp'
-  ], cb);
+  return del(['dist/**'], cb);
 });
 
 gulp.task('html', function () {

@@ -29,13 +29,14 @@ export default CompositeView.extend({
   onShow() {
     this.ui.carousel.owlCarousel({
       items: 1,
-      loop: false,
+      loop: true,
       autoplay: true,
       dots: true,
       smartSpeed: 500,
+      autoplayHoverPause: true,
 
 
-      
+
       paginationSpeed: 500,
       rewindSpeed: 1000
     });
