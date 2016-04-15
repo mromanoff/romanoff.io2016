@@ -35,8 +35,7 @@ $nav-height: 50px;
 
   @include element('logo') {
     width: 160px;
-    line-height: $nav-height;
-    margin-left: $margin-md;
+    margin: $margin-md 0 0 $margin-md;
   }
 
   @include element('navigation') {
@@ -49,6 +48,7 @@ $nav-height: 50px;
   }
 
   @include element('links') {
+    padding: 0;
     position: fixed;
     width: 100%;
     height: 0;
@@ -94,7 +94,7 @@ $nav-height: 50px;
 
     @include element('logo') {
       width: 311px;
-      margin: $margin-md 0 $margin-md $margin-lg;
+      margin: $margin-lg 0 $margin-md $margin-lg;
     }
 
     @include element('links') {
@@ -132,8 +132,7 @@ $nav-height: 50px;
     @include element('logo') {
       float: left;
       width: 206px;
-      margin: 0 0 0 $margin-lg;
-      line-height: $nav-height - 4; //tune up
+      margin: $margin-md 0 0 $margin-lg;
     }
 
     @include element('navigation') {

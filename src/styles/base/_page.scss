@@ -25,21 +25,21 @@
  *    using `display: block;`.
  */
 
-img.full-width{
-  height: auto;
-  max-width: 100%; /* [1] */
-  font-style: italic; /* [2] */
-  vertical-align: middle; /* [3] */
-}
-
-picture {
-  img {
-    height: auto;
-    max-width: 100%; /* [1] */
-    font-style: italic; /* [2] */
-    vertical-align: middle; /* [3] */
-  }
-}
+//img.full-width{
+//  height: auto;
+//  max-width: 100%; /* [1] */
+//  font-style: italic; /* [2] */
+//  vertical-align: middle; /* [3] */
+//}
+//
+//picture {
+//  img {
+//    height: auto;
+//    max-width: 100%; /* [1] */
+//    font-style: italic; /* [2] */
+//    vertical-align: middle; /* [3] */
+//  }
+//}
 
 #nprogress {
   .bar {

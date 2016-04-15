@@ -1,6 +1,13 @@
-/*------------------------------------*\
-    #LINKS
-\*------------------------------------*/
+/**
+ * base/_links.scss
+ */
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/* Default
+   ========================================================================== */
 
 
 a {
@@ -21,4 +28,27 @@ a {
 //    text-decoration: none;
 //  }
 //
+//}
+
+
+
+
+//
+//a {
+//  text-decoration: none;
+//  color: $color-links;
+//  border-bottom: 1px solid;
+//  border-bottom-color: currentColor;
+//  transition: color $base-transition-duration $base-transition-easing, border-bottom $base-transition-duration $base-transition-easing;
+//
+//  // These are here for FireFox's benefit because sanitize-css does some funny things...
+//  cursor: pointer;
+//  cursor: hand;
+//
+//  &:hover,
+//  &:active,
+//  &:focus { border-bottom-color: currentColor; }
+//
+//  &:active,
+//  &:focus { outline: none; }
 //}
