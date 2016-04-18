@@ -4,7 +4,7 @@
  */
 
 import {Route} from 'backbone-routing';
-import LayoutView from './layout-view';
+import View from './view';
 import storage from '../storage';
 
 
@@ -20,10 +20,10 @@ export default Route.extend({
   },
 
   render() {
-    this.layoutView = new LayoutView({
+    this.view = new View({
       model: this.model
     });
 
-    this.container.show(this.layoutView);
+    this.container.show(this.view);
   }
 });

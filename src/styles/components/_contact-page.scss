@@ -2,4 +2,31 @@
   img {
     margin: 0 auto;
   }
+
+  @include element('form') {
+    padding: $padding-lg ($padding-lg * 2);
+    background: $color-brand-primary3;
+    text-align: center;
+
+    h3 {
+      color: $color-gray-light;
+    }
+
+    h5 {
+      color: $color-white;
+      margin: 20px 0;
+      font-size: $font-sm;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    @include bp-more-than ($medium-screen-min) {
+      padding: $padding-lg ($padding-lg * 6);
+    }
+
+    @include bp-more-than ($large-screen-min) {
+      padding: $padding-lg ($padding-lg * 8);
+    }
+
+  }
 }

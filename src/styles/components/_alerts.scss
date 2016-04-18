@@ -1,0 +1,33 @@
+.alert {
+  padding: $padding-md;
+  text-transform: uppercase;
+
+  ul{
+    margin-bottom: 0;
+
+    li:not(:last-child){
+      margin-bottom: $margin-md;
+      letter-spacing: 1px;
+    }
+  }
+
+  @include modifier('info') {
+
+  }
+
+  @include modifier('warning') {
+    color: $color-white;
+    background: $color-brand-warning;
+    border: 1px solid white;
+  }
+
+  @include modifier('error') {
+    color: $color-white;
+    background: $color-brand-danger;
+    border: 1px solid $color-white;
+  }
+
+  @include modifier('success') {
+
+  }
+}

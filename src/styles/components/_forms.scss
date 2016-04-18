@@ -1,0 +1,49 @@
+/**
+ * components/_forms.scss
+ */
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/* Standard styling
+   ========================================================================== */
+
+//.control-group {
+//  &.error input {
+//    border-bottom: 1px solid $brand-danger;
+//    border-color: $color-brand-danger;
+//  }
+//}
+
+input {
+  font-size: $font-lg;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid $color-white;;
+  margin: 0 auto $padding-md auto;
+  padding: ($padding-md - $padding-xs) $padding-lg;
+  background: transparent;
+  color: $color-white;
+  text-align: center;
+}
+
+@include bp-more-than ($medium-screen-min) {
+
+//  .control-group{
+//    &.error input{
+//      border-color: $brand-danger;
+//    }
+//  }
+
+  input {
+    background: $color-gray-darker;
+    color: $color-white;;
+    border: none;
+    font-size: $font-xl * 1.2;
+    min-width: 0;
+    padding: 10px 20px;
+  }
+}
+
