@@ -21,7 +21,6 @@ export default Model.extend({
   },
 
   url() {
-    //return API.url + '/api/' + API.version + '/databases/' + API.database + '/collections/' + API.collection + '?apiKey=' + API.key;
     return `${API.url}/api/${API.version}/databases/${API.database}/collections/${API.collection}?apiKey=${API.key}`;
   },
 

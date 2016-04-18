@@ -18,11 +18,7 @@ export default ItemView.extend({
   template: template,
   tagName: 'main',
   className: 'contact contact--index',
-
-  // initialize() {
-  //   _.bindAll(this, 'handleSaveSuccess');
-  // },
-
+  
   behaviors: {
     form: { behaviorClass: FormBehavior }
   },

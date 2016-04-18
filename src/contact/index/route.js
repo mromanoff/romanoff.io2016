@@ -6,6 +6,7 @@
 import {Route} from 'backbone-routing';
 import View from './view';
 import storage from '../storage';
+import Model from '../model';
 
 
 export default Route.extend({
@@ -13,15 +14,15 @@ export default Route.extend({
     this.container = options.container;
   },
 
-  fetch() {
-    return storage.find().then(model => {
-      this.model = model;
-    });
-  },
+  // fetch() {
+  //   return storage.find().then(model => {
+  //     this.model = model;
+  //   });
+  // },
 
   render() {
     this.view = new View({
-      model: this.model
+      model: new Model()
     });
 
     this.container.show(this.view);
