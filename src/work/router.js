@@ -46,7 +46,7 @@ export default Router.extend({
   index() {
     return new IndexRoute({
       container: this.container
-    })
+    });
   },
 
   show() {
@@ -54,4 +54,4 @@ export default Router.extend({
       container: this.container
     });
   }
-})
+});

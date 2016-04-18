@@ -38,7 +38,7 @@ export default LayoutView.extend({
     var errors = this.model.validate(this.form);
 
     if (!errors) {
-      nprogress.start();
+      //nprogress.start();
       this.model.save(this.form).done(this.handleSaveSuccess);
     } else {
       this.errors = errors;
@@ -47,6 +47,6 @@ export default LayoutView.extend({
   },
 
   handleSaveSuccess: function () {
-    Backbone.history.navigate('/', { trigger: true });
+    //Backbone.history.navigate('/', { trigger: true });
   }
 });

@@ -34,7 +34,7 @@ export default Route.extend({
       workStorage.findAll(),
       photographyStorage.findAll(),
       codeStorage.findAll()
-    ]).then(function(collections) {
+    ]).then(function (collections) {
       collections.forEach(this.createCollection.bind(this));
     }.bind(this));
   },
@@ -63,6 +63,6 @@ export default Route.extend({
   },
 
   createCollection(collection, index) {
-    return this[components[index] + 'Collection'] = collection;
+    return this[`${components[index]}Collection`] = collection;
   }
 });

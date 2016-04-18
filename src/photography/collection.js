@@ -22,7 +22,8 @@ export default Collection.extend({
   //model: Model,
 
   url() {
-    return API.url + '?exclude=' + API.exclude + '&feature=' + API.feature + '&user_id=' + API.userId + '&sort=' + API.sort + '&image_size=' + API.imageSize + '&page=' + this.page + '&tags=' + API.tags + '&rpp=' + API.rpp + '&consumer_key=' + API.consumerKey; // jshint ignore:line
+    //return API.url + '?exclude=' + API.exclude + '&feature=' + API.feature + '&user_id=' + API.userId + '&sort=' + API.sort + '&image_size=' + API.imageSize + '&page=' + this.page + '&tags=' + API.tags + '&rpp=' + API.rpp + '&consumer_key=' + API.consumerKey; // jshint ignore:line
+    return `${API.url}?exclude=${API.exclude}&feature=${API.feature}&user_id=${API.userId}&sort=${API.sort}&image_size=${API.imageSize}&page=${this.page}&tags=${API.tags}&rpp=${API.rpp}&consumer_key=${API.consumerKey}`; // jshint ignore:line
   },
 
   parse(response) {

@@ -12,6 +12,6 @@ var API = {
 
 module.exports = Backbone.Collection.extend({
   url() {
-    return API.url + '?sort=' + API.sort;
+    return `${API.url}?sort=${API.sort}`;
   }
 });

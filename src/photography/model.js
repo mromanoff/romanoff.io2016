@@ -15,6 +15,6 @@ var API = {
 export default Model.extend({
 
   url() {
-    return API.url + this.get('id') + '?image_size=' + API.imageSize + '&comments=' + API.comments + '&consumer_key=' + API.consumerKey; // jshint ignore:line
+    return `${API.url + this.get('id')}?image_size=${API.imageSize}&comments=${API.comments}&consumer_key=${API.consumerKey}`; // jshint ignore:line
   }
 });

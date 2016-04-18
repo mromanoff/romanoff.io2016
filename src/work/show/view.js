@@ -1,5 +1,4 @@
 import {ItemView} from 'backbone.marionette';
-import {history} from 'backbone';
 import template from './template.hbs';
 
 export default ItemView.extend({
