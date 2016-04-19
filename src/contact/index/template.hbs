@@ -25,7 +25,7 @@
           <div class="alert alert--error">
               <ul class="list-unstyled">
                 {{#each errors}}
-                    <li>{{this}}</li>
+                    <li>{{this.value}}</li>
                 {{/each}}
               </ul>
           </div>
@@ -35,24 +35,28 @@
 
         <h3>Hello! My name is</h3>
 
-        <div class="control-group">
+        <div class="form-group">
+            <label class="display--hidden--visually" for="firstName">First Name</label>
             <input id="firstName" name="firstName" class="first-name" type="text" maxlength="15" placeholder="First Name">
             <span class="help-inline"></span>
         </div>
 
-        <div class="control-group">
+        <div class="form-group">
+            <label class="display--hidden--visually" for="lastName">Last Name</label>
             <input id="lastName" name="lastName" class="last-name" type="text" maxlength="15" placeholder="Last Name">
             <span class="help-inline"></span>
         </div>
 
         <h5>Please contact me</h5>
 
-        <div class="control-group">
+        <div class="form-group{{#if emailError}} alert--error{{/if}}">
+            <label class="display--hidden--visually" for="email">Email</label>
             <input id="email" name="email" type="email" maxlength="50" placeholder="Email Address">
             <span class="help-inline"></span>
         </div>
 
-        <div class="control-group">
+        <div class="form-group">
+            <label class="display--hidden--visually" for="phone">Phone Number</label>
             <input id="phone" name="phone" type="tel" maxlength="15" placeholder="Phone Number">
             <span class="help-inline"></span>
         </div>

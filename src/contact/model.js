@@ -4,7 +4,7 @@
  */
 import {Model} from 'backbone';
 
-var API = {
+let API = {
   url: 'https://api.mongolab.com',
   version: 1,
   database: 'romanoff-io',
@@ -25,22 +25,35 @@ export default Model.extend({
   },
 
   validate(attrs) {
-    var errors = [];
+    let errors = [];
+
 
     if (attrs.firstName === '') {
-      errors.push('Missing "First Name" field');
+      errors.push({
+        key: 'firstName',
+        value: 'Missing "First Name" field'
+      });
     }
 
     if (attrs.lastName === '') {
-      errors.push('Missing "Last Name" field');
+      errors.push({
+        key: 'lastName',
+        value: 'Missing "Last Name" field'
+      });
     }
 
     if (attrs.email === '') {
-      errors.push('Missing "Email" field');
+      errors.push({
+        key: 'email',
+        value: 'Missing "Email" field'
+      });
     }
 
     if (attrs.phone === '') {
-      errors.push('Missing "Phone" field');
+      errors.push({
+        key: 'phone',
+        value: 'Missing "Phone" field'
+      });
     }
 
     return errors.length > 0 ? errors : undefined;

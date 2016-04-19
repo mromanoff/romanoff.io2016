@@ -18,14 +18,15 @@ export default ItemView.extend({
   template: template,
   tagName: 'main',
   className: 'contact contact--index',
-  
+
   behaviors: {
     form: { behaviorClass: FormBehavior }
   },
 
   templateHelpers() {
     return {
-      errors: this.errors
+      errors: this.errors,
+      emailError: null //'Check your email'
     };
   },
 

@@ -1,8 +1,7 @@
 {
-  "name": "marionette-wires",
-  "version": "0.0.0",
-  "description": "Starter kit for Marionette.js Applications using Browserify",
-  "main": "index.js",
+  "name": "romanoff.io",
+  "version": "2.0.1",
+  "description": "Romanoff.io web site v2",
   "scripts": {
     "start": "gulp build && node server",
     "watch": "gulp watch",
@@ -18,12 +17,12 @@
     "browserify",
     "backbone"
   ],
-  "author": "James Kyle <me@thejameskyle.com>",
+  "author": "Michael Romanoff <2michael.romanoff@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thejameskyle/marionette-wires/issues"
+    "url": "https://github.com/mromanoff/"
   },
-  "homepage": "https://github.com/thejameskyle/marionette-wires",
+  "homepage": "",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel": "^6.1.18",
