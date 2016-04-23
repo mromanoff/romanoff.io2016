@@ -141,7 +141,7 @@ gulp.task('mocha', ['jshint'], function () {
 });
 
 gulp.task('build', [
-  'clean',
+  //'clean',
   'html',
   'images',
   'fonts',

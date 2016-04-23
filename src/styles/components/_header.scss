@@ -85,6 +85,14 @@ $nav-height: 50px;
       font-size: 20px;
       letter-spacing: 4px;
       text-decoration: none;
+
+      $link-transition: color;
+      @include transition($link-transition);
+
+      @include attention() {
+        color: $color-white;
+      }
+
     }
 
     @include modifier('active') {
