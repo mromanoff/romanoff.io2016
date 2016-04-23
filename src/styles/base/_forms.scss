@@ -19,16 +19,22 @@ fieldset {
 
 // Uggglay (but required)!
 @-moz-document url-prefix() {
-  fieldset { display: table-cell; }
+  fieldset {
+    display: table-cell;
+  }
 }
 
 /* Legend */
 
-legend { line-height: 1; }
+legend {
+  line-height: 1;
+}
 
 /* Form */
 
-form { line-height: 1; }
+form {
+  line-height: 1;
+}
 
 /* Labels */
 
@@ -41,7 +47,9 @@ label {
 
 /* Textareas */
 
-textarea { resize: vertical; }
+textarea {
+  resize: vertical;
+}
 
 /* Inputs */
 
@@ -61,7 +69,9 @@ input[type='datalist'] {
 
   // &:hover {}
 
-  &:focus { outline: none; }
+  &:focus {
+    outline: none;
+  }
 }
 
 // Color
@@ -74,5 +84,7 @@ input[type='datalist'] {
 // Search
 // input[type='search'] {}
 
-select { font-family: $sans-serif; }
+select {
+  font-family: $sans-serif;
+}
 

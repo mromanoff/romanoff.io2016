@@ -7,13 +7,6 @@
    ========================================================================== */
 
 
-//.control-group {
-//  &.error input {
-//    border-bottom: 1px solid $brand-danger;
-//    border-color: $color-brand-danger;
-//  }
-//}
-
 input {
   font-size: $font-lg;
   font-weight: 200;
@@ -27,13 +20,20 @@ input {
   text-align: center;
 }
 
+.form-group {
+  &.has-error input {
+    border-bottom: 2px solid $color-brand-danger;
+  }
+}
+
+
 @include bp-more-than ($medium-screen-min) {
 
-//  .control-group{
-//    &.error input{
-//      border-color: $brand-danger;
-//    }
-//  }
+  .form-group{
+    &.has-error input{
+      border-color: $color-brand-danger;
+    }
+  }
 
   input {
     background: $color-gray-darker;

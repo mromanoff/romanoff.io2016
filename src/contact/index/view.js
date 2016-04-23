@@ -13,6 +13,8 @@ import {history} from 'backbone';
 import template from './template.hbs';
 import storage from '../storage';
 
+import _ from 'underscore';
+
 
 export default ItemView.extend({
   template: template,
@@ -24,9 +26,30 @@ export default ItemView.extend({
   },
 
   templateHelpers() {
+    //TODO: refactor error validation
+    let firstNameError;
+    let lastNameError;
+    let emailError;
+    let phoneError;
+
+
+    if(this.errors) {
+      let errorNames = this.errors.map((error) => {
+        return error.key;
+      });
+
+      firstNameError = _.contains(errorNames, 'firstName');
+      lastNameError = _.contains(errorNames, 'lastName');
+      emailError = _.contains(errorNames, 'email');
+      phoneError = _.contains(errorNames, 'phone');
+    }
+
     return {
       errors: this.errors,
-      emailError: null //'Check your email'
+      firstNameError: firstNameError,
+      lastNameError: lastNameError,
+      emailError: emailError,
+      phoneError: phoneError
     };
   },
 
