@@ -13,7 +13,7 @@ export default ItemView.extend({
   className: 'photography photography--show container',
 
   ui: {
-    goBack: '.goBack'
+    goBack: '[data-action="go-back"]'
   },
 
   behaviors: {

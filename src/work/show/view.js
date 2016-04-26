@@ -1,20 +1,24 @@
+/**
+ * Work Show View
+ * @type {exports}
+ */
+
 import {ItemView} from 'backbone.marionette';
 import template from './template.hbs';
+import GoBackBehavior from '../../behaviors/go-back';
 
 export default ItemView.extend({
   template: template,
   tagName: 'main',
   className: 'work work--show container',
 
-  initialize(options = {}) {
-    this.model = options.model;
+  ui: {
+    goBack: '[data-action="go-back"]'
   },
 
-  modelEvents: {
-    all: 'render'
-  },
-
-  handleToggle() {
-    this.model.set('active', !this.model.get('active'));
+  behaviors: {
+    GoBackBehavior: {
+      behaviorClass: GoBackBehavior
+    }
   }
 });

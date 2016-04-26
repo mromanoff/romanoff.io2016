@@ -41,6 +41,28 @@
         opacity: .9;
       }
     }
+
+    @include bp-more-than ($medium-screen-min) {
+      li {
+        lost-column: 1/3 3 1rem;
+        margin-bottom: $margin-md;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    @include bp-more-than ($large-screen-min) {
+      li {
+        lost-column: 1/4 4 1rem;
+        margin-bottom: $margin-md;
+
+        &:last-child {
+          display: block;
+        }
+      }
+    }
   }
 
   @include element('work') {

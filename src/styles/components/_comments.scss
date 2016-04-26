@@ -1,0 +1,10 @@
+.comments {
+  background-color: $color-gray-lighter;
+
+
+  @include element('gravatar') {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto $margin-lg;
+  }
+}

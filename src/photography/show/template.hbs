@@ -1,6 +1,6 @@
-<section class="module margin-top--lg">
+<section class="module margin-vertical--xl text-align--center">
     <nav>
-        <a class="btn btn-secondary font-size--smaller" data-action="go-back" href="#">Go Back</a>
+        <a class="btn btn-secondary font-size--smaller display--inline-block" data-action="go-back" href="#">Go Back</a>
     </nav>
 </section>
 
@@ -8,8 +8,8 @@
     <img class="full-width" src="{{photo.image_url}}" alt="{{photo.name}}">
 </section>
 
-<section class="module photo-details">
-    <h3>{{photo.name}}</h3>
+<section class="module photo-details text-align--center">
+    <h1 class="title">{{photo.name}}</h1>
   {{#if photo.description}}
       <p>{{photo.description}}</p>
   {{/if}}
@@ -31,13 +31,15 @@
   {{/if}}
 </section>
 
-<section class="module">
+<section class="module margin-vertical--xl text-align--center">
     <nav>
-        <a class="btn btn-secondary font-size--smaller" href="http://500px.com{{photo.url}}" target="_blank">Go Rate this picture</a>
+        <a class="btn btn-secondary font-size--smaller display--inline-block" href="http://500px.com{{photo.url}}"
+           target="_blank">Go Rate
+            this picture</a>
     </nav>
 </section>
 
-<section class="module photo-details">
+<section class="module photo-details text-align--center">
 
   {{#if photo.camera}}
       <p><strong>Camera:</strong> {{photo.camera}}</p>
@@ -62,11 +64,11 @@
 </section>
 
 {{#if comments}}
-    <section class="module comments">
+    <section class="module comments padding-vertical--lg margin-all--xl text-align--center">
         <h2 class="title">Comments:</h2>
       {{#each comments}}
           <p>
-              <img class="gravatar" src="{{user.userpic_url}}" alt="{{user.fullname}}">
+              <img class="comments__gravatar" src="{{user.userpic_url}}" alt="{{user.fullname}}">
             {{user.fullname}}
             {{#if user.country}}
                 from {{user.country}}

@@ -12,18 +12,11 @@ let API = {
   key: 'oOfu-DRx8fwXi9VifYrwAwgJGCBXT1_n'
 };
 
-
-let map = {
-    firstName: 'Please enter your first name',
-    lastName: 'Please enter your last name'
-};
-
 export default Model.extend({
   defaults: {
     firstName: null,
     lastName: null,
-    email: null,
-    phone: null
+    email: null
   },
 
   url() {
@@ -32,6 +25,7 @@ export default Model.extend({
 
   validate(attrs) {
     let errors = {};
+    errors.status = 0;
 
     if (attrs.firstName === '') {
       errors.firstName = {

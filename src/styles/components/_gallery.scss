@@ -10,7 +10,6 @@
 .gallery {
 
   text-align: center;
-  //padding: 0 $section-side-padding;
 
   lost-utility: clearfix;
 
@@ -30,6 +29,11 @@
         @include transition($image-transition);
         opacity: .9;
       }
+    }
+
+    h6 {
+      font-weight: 400;
+      margin: $margin-sm 0;
     }
   }
 }
