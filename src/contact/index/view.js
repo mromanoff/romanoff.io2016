@@ -3,9 +3,6 @@
  * @type {Marionette.ItemView|exports}
  */
 
-
-
-
 import nprogress from 'nprogress';
 import {ItemView} from 'backbone.marionette';
 import FormBehavior from '../../forms/behavior';
@@ -13,7 +10,7 @@ import {history} from 'backbone';
 import template from './template.hbs';
 import storage from '../storage';
 
-import _ from 'underscore';
+import $ from 'jquery';
 
 
 export default ItemView.extend({
@@ -26,35 +23,19 @@ export default ItemView.extend({
   },
 
   templateHelpers() {
-    //TODO: refactor error validation
-    let firstNameError;
-    let lastNameError;
-    let emailError;
-    let phoneError;
-
-
-    if(this.errors) {
-      let errorNames = this.errors.map((error) => {
-        return error.key;
-      });
-
-      firstNameError = _.contains(errorNames, 'firstName');
-      lastNameError = _.contains(errorNames, 'lastName');
-      emailError = _.contains(errorNames, 'email');
-      phoneError = _.contains(errorNames, 'phone');
-    }
-
     return {
-      errors: this.errors,
-      firstNameError: firstNameError,
-      lastNameError: lastNameError,
-      emailError: emailError,
-      phoneError: phoneError
+      errors: this.errors
     };
   },
 
   events: {
-    'submit form': 'handleSubmit'
+    'submit form': 'handleSubmit',
+    'focus input': 'clearInputError'
+  },
+
+  clearInputError(e) {
+    var $target = $(e.currentTarget);
+    $target.closest('.form-group').removeClass('has-error');
   },
 
   handleSubmit() {
@@ -67,7 +48,7 @@ export default ItemView.extend({
       nprogress.start();
       this.model.set(this.form);
       storage.save(this.model).then(() => {
-        history.navigate('/', { trigger: true });
+        history.navigate('', { trigger: true });
       });
     }
   }

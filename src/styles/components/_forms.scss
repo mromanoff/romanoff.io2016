@@ -13,7 +13,7 @@ input {
   text-transform: uppercase;
   letter-spacing: 3px;
   border: 1px solid $color-white;;
-  margin: 0 auto $padding-md auto;
+  margin: 0 auto $margin-sm auto;
   padding: ($padding-md - $padding-xs) $padding-lg;
   background: transparent;
   color: $color-white;
@@ -21,8 +21,20 @@ input {
 }
 
 .form-group {
-  &.has-error input {
-    border-bottom: 2px solid $color-brand-danger;
+  margin-bottom: $margin-md;
+
+  .message--error {
+    display: none;
+  }
+
+  &.has-error {
+    input {
+      border-bottom: 2px solid $color-brand-danger;
+    }
+    .message--error {
+      display: block;
+      color: $color-brand-danger
+    }
   }
 }
 
@@ -30,8 +42,10 @@ input {
 @include bp-more-than ($medium-screen-min) {
 
   .form-group{
-    &.has-error input{
-      border-color: $color-brand-danger;
+    &.has-error {
+      input{
+        border-color: $color-brand-danger;
+      }
     }
   }
 

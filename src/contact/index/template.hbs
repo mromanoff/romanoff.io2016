@@ -21,44 +21,29 @@
 
 <section class="container full-width">
     <form role="form" class="contact__form">
-      {{#if errors}}
-          <div class="alert alert--error">
-              <ul class="list-unstyled">
-                {{#each errors}}
-                    <li>{{this.value}}</li>
-                {{/each}}
-              </ul>
-          </div>
-      {{/if}}
 
         <h5>Or introduce yourself</h5>
 
         <h3>Hello! My name is</h3>
 
-        <div class="form-group{{#if firstNameError}} has-error{{/if}}">
+        <div class="form-group{{#if errors.firstName}} has-error{{/if}}">
             <label class="display--hidden--visually" for="firstName">First Name</label>
             <input id="firstName" name="firstName" class="first-name" type="text" maxlength="15" placeholder="First Name">
-            <span class="help-inline"></span>
+            <span class="message--error">{{errors.firstName.message}}</span>
         </div>
 
-        <div class="form-group{{#if lastNameError}} has-error{{/if}}">
+        <div class="form-group{{#if errors.lastName}} has-error{{/if}}">
             <label class="display--hidden--visually" for="lastName">Last Name</label>
             <input id="lastName" name="lastName" class="last-name" type="text" maxlength="15" placeholder="Last Name">
-            <span class="help-inline"></span>
+            <span class="message--error">{{errors.lastName.message}}</span>
         </div>
 
         <h5>Please contact me</h5>
 
-        <div class="form-group{{#if emailError}} has-error{{/if}}">
+        <div class="form-group{{#if errors.email}} has-error{{/if}}">
             <label class="display--hidden--visually" for="email">Email</label>
             <input id="email" name="email" type="email" maxlength="50" placeholder="Email Address">
-            <span class="help-inline"></span>
-        </div>
-
-        <div class="form-group{{#if phoneError}} has-error{{/if}}">
-            <label class="display--hidden--visually" for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" maxlength="15" placeholder="Phone Number">
-            <span class="help-inline"></span>
+            <span class="message--error">{{errors.email.message}}</span>
         </div>
 
         <nav class="button-container button-container--centered">

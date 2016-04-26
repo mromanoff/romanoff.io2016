@@ -12,6 +12,12 @@ let API = {
   key: 'oOfu-DRx8fwXi9VifYrwAwgJGCBXT1_n'
 };
 
+
+let map = {
+    firstName: 'Please enter your first name',
+    lastName: 'Please enter your last name'
+};
+
 export default Model.extend({
   defaults: {
     firstName: null,
@@ -25,37 +31,32 @@ export default Model.extend({
   },
 
   validate(attrs) {
-    let errors = [];
-
+    let errors = {};
 
     if (attrs.firstName === '') {
-      errors.push({
-        key: 'firstName',
-        value: 'Missing "First Name" field'
-      });
+      errors.firstName = {
+        message: 'Please enter your first name'
+      };
+
+      errors.status = 1;
     }
 
     if (attrs.lastName === '') {
-      errors.push({
-        key: 'lastName',
-        value: 'Missing "Last Name" field'
-      });
+      errors.lastName = {
+        message: 'Please enter your last name'
+      };
+
+      errors.status = 1;
     }
 
     if (attrs.email === '') {
-      errors.push({
-        key: 'email',
-        value: 'Missing "Email" field'
-      });
+      errors.email = {
+        message: 'Please enter your email'
+      };
+
+      errors.status = 1;
     }
 
-    if (attrs.phone === '') {
-      errors.push({
-        key: 'phone',
-        value: 'Missing "Phone" field'
-      });
-    }
-
-    return errors.length > 0 ? errors : undefined;
+    return errors.status === 1 ? errors : undefined;
   }
 });
