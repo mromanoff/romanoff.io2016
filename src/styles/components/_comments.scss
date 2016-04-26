@@ -1,6 +1,7 @@
 .comments {
   background-color: $color-gray-lighter;
-
+  margin: 0 (-$margin-lg);
+  padding: $padding-lg;
 
   @include element('gravatar') {
     width: 150px;

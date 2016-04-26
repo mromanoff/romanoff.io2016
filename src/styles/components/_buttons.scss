@@ -53,4 +53,8 @@
     font-size: $font-sm;
     padding: $padding-sm $padding-md;
   }
+
+  @include modifier('inline-block') {
+    display: inline-block;
+  }
 }
