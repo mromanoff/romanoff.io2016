@@ -1,12 +1,11 @@
 {
   "name": "romanoff.io",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Romanoff.io web site v2",
   "scripts": {
-    "start": "gulp build && node server",
+    "start": "gulp build & node server",
     "watch": "gulp watch",
-    "test": "gulp test",
-    "integration": "pioneer"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -60,7 +59,6 @@
     "minimatch": "^3.0.0",
     "mocha": "^2.1.0",
     "morgan": "^1.5.1",
-    "pioneer": "^0.11.0",
     "proxyquire": "^1.7.3",
     "request": "^2.51.0",
     "selenium-webdriver": "^2.44.0",
@@ -91,7 +89,7 @@
     "picturefill": "^3.0.2"
   },
   "browser": {
-    "owl.carousel": "./bower_components/owl.carousel/dist/owl.carousel.js"
+    "owl.carousel": "./src/vendor/owl.carousel/owl.carousel.js"
   },
   "browserify-shim": {
     "owl.carousel": {

@@ -5,7 +5,7 @@ var morgan = require('morgan');
 
 var argv = require('yargs')
             .usage('Start the server')
-            .default('port', process.env.WEB_PORT || 1337)
+            .default('port', process.env.WEB_PORT || 3000)
             .alias('port', 'p')
             .describe('port', 'port to run on')
             .argv;
