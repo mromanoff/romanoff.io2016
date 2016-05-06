@@ -1,8 +1,6 @@
 [
   {
-    "_id": {
-      "$oid": "54ae002734e302214cb40c29"
-    },
+    "id": "54ae002734e302214cb40c29",
     "visible": true,
     "category": "work",
     "name": "J2FIT",
@@ -18,9 +16,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002734e302214cb40c2a"
-    },
+    "id": "54ae002734e302214cb40c2a",
     "visible": true,
     "category": "work",
     "name": "Blink Fitness",
@@ -36,9 +32,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002734e302214cb40c2b"
-    },
+    "id": "54ae002734e302214cb40c2b",
     "visible": true,
     "category": "work",
     "name": "Equinox",
@@ -54,9 +48,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002734e302214cb40c2c"
-    },
+    "id": "54ae002734e302214cb40c2c",
     "visible": true,
     "category": "work",
     "name": "QBlog by Equinox",
@@ -72,9 +64,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002734e302214cb40c2d"
-    },
+    "id": "54ae002734e302214cb40c2d",
     "visible": true,
     "category": "work",
     "name": "New York Color",
@@ -94,9 +84,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c2e"
-    },
+    "id": "54ae002834e302214cb40c2e",
     "visible": true,
     "category": "work",
     "name": "Playboy Fragrances",
@@ -116,9 +104,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c2f"
-    },
+    "id": "54ae002834e302214cb40c2f",
     "visible": true,
     "category": "work",
     "name": "Halle Berry Fragrances",
@@ -138,9 +124,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c35"
-    },
+    "id": "54ae002834e302214cb40c35",
     "visible": true,
     "category": "work",
     "name": "Master Card Marketing Center",
@@ -156,9 +140,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c30"
-    },
+    "id": "54ae002834e302214cb40c30",
     "visible": true,
     "category": "work",
     "name": "Astor Cosmetics",
@@ -178,9 +160,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c31"
-    },
+    "id": "54ae002834e302214cb40c31",
     "visible": true,
     "category": "work",
     "name": "Guess Parfums",
@@ -200,9 +180,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c32"
-    },
+    "id": "54ae002834e302214cb40c32",
     "visible": true,
     "category": "work",
     "name": "Sally Hansen",
@@ -222,9 +200,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c33"
-    },
+    "id": "54ae002834e302214cb40c33",
     "visible": true,
     "category": "work",
     "name": "Project Focus",
@@ -244,9 +220,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c34"
-    },
+    "id": "54ae002834e302214cb40c34",
     "visible": true,
     "category": "work",
     "name": "resident",
@@ -262,9 +236,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "54ae002834e302214cb40c36"
-    },
+    "id": "54ae002834e302214cb40c36",
     "visible": true,
     "category": "work",
     "name": "myalli",

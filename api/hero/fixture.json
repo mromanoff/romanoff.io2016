@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "small": "/images/hero/main-1-768x720.jpg",
     "medium": "/images/hero/main-1-1280x600.jpg",
     "large": "/images/hero/main-1-1920x700.jpg",
@@ -8,6 +9,7 @@
     "alt": "romanoff.io"
   },
   {
+    "id": 2,
     "small": "/images/hero/main-3-768x720.jpg",
     "medium": "/images/hero/main-3-1280x600.jpg",
     "large": "/images/hero/main-3-1920x700.jpg",
@@ -16,6 +18,7 @@
     "alt": "romanoff.io"
   },
   {
+    "id": 3,
     "small": "/images/hero/main-2-768x720.jpg",
     "medium": "/images/hero/main-2-1280x600.jpg",
     "large": "/images/hero/main-2-1920x700.jpg",
@@ -25,6 +28,7 @@
     "alt": "romanoff.io"
   },
   {
+    "id": 4,
     "small": "/images/hero/main-4-768x720.jpg",
     "medium": "/images/hero/main-4-1280x600.jpg",
     "large": "/images/hero/main-4-1920x700.jpg",
