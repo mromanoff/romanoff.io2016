@@ -17,27 +17,78 @@ $transparent: transparent !default;
 
 /* Greys
    ========================================================================== */
-$color-gray-darker: #222222;
-$color-gray-dark: #343434;
-$color-gray: #555555;
-$color-gray-light: #999999;
-$color-gray-lighter: #EEEEEE;
+$color-gray-darker: #222222 !default;
+$color-gray-dark: #343434 !default;
+$color-gray: #555555 !default;
+$color-gray-light: #999999 !default;
+$color-gray-lighter: #EEEEEE !default;
 
 
 /* Brand colors
    ========================================================================== */
 // based on https://color.adobe.com/Roles1-color-theme-1814741/
 
-$color-brand-primary: #94090D;
-$color-brand-primary2: #E9967A;
-$color-brand-primary3: #483D8B;
-$color-brand-primary4: #263248;
-$color-brand-primary5: #FFA000;
+$color-brand-primary: #94090D !default;
+$color-brand-primary2: #E9967A !default;
+$color-brand-primary3: #483D8B !default;
+$color-brand-primary4: #263248 !default;
+$color-brand-primary5: #FFA000 !default;
 
-$color-brand-success: #5CB85C;
-$color-brand-warning: #FF8C00;
-$color-brand-danger: #D40D12;
-$color-brand-info: #5BC0DE;
+$color-brand-success: #5CB85C !default;
+$color-brand-warning: #FF8C00 !default;
+$color-brand-danger: #D40D12 !default;
+$color-brand-info: #5BC0DE !default;
+
+
+/*
+  colors from http://colorlisa.com/
+*/
+
+//THE BIRTH OF VENUS BY SANDRO BOTTICELLI
+//$color-brand-primary: #7A989A;
+//$color-brand-primary2: #849271;
+//$color-brand-primary3: #C1AE8D;
+//$color-brand-primary4: #CF9546;
+//$color-brand-primary5: #C67052;
+
+//LA MARIÉE SOUS LE BALDAQUIN BY MARC CHAGALL
+//$color-brand-primary: #3F6F76;
+//$color-brand-primary2: #69B7CE;
+//$color-brand-primary3: #C65840;
+//$color-brand-primary4: #F4CE4B;
+//$color-brand-primary5: #62496F;
+
+
+//ANTHRACITE MINUET BY GENE DAVIS
+//$color-brand-primary: #293757;
+//$color-brand-primary2: #568D4B;
+//$color-brand-primary3: #D5BB56;
+//$color-brand-primary4: #D26A1B;
+//$color-brand-primary5: #A41D1A;
+
+
+//LANDSCAPE BY MARCEL DUCHAMP
+//$color-brand-primary: #D0CEC2;
+//$color-brand-primary2: #7BAA80;
+//$color-brand-primary3: #4B6B5E;
+//$color-brand-primary4: #BF9A41;
+//$color-brand-primary5: #980019;
+
+//WOMAN, OLD MAN, AND FLOWER BY MAX ERNST
+//$color-brand-primary: #91323A;
+//$color-brand-primary2: #3A4960;
+//$color-brand-primary3: #D7C969;
+//$color-brand-primary4: #6D7345;
+//$color-brand-primary5: #554540;
+
+//GRAVITY BY M.C. ESCHER
+//$color-brand-primary: #C1395E;
+//$color-brand-primary2: #AEC17B;
+//$color-brand-primary3: #F0CA50;
+//$color-brand-primary4: #E07B42;
+//$color-brand-primary5: #89A7C2;
+
+
 
 
 /* Typography

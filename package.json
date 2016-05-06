@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thejameskyle/marionette-wires.git"
+    "url": "git://github.com/mromanoff/romanoff.io2016"
   },
   "keywords": [
     "marionette",
@@ -19,9 +19,9 @@
   "author": "Michael Romanoff <2michael.romanoff@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mromanoff/"
+    "url": "https://romanoff.io"
   },
-  "homepage": "",
+  "homepage": "https://romanoff.io",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel": "^6.1.18",

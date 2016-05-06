@@ -66,8 +66,6 @@ gulp.task('styles', function () {
         'android 4'
       ]
     })
-    //,
-    //mqpacker,
   ];
   return gulp.src('./src/*.scss')
     .pipe(sourcemaps.init())
@@ -76,7 +74,7 @@ gulp.task('styles', function () {
       errorHandler: onError
     }))
     .pipe(postcss(processors))
-    //.pipe(nano())
+    .pipe(nano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist'));
 });
@@ -172,7 +170,6 @@ gulp.task('watch', ['build'], function () {
     gulp.start('test');
   });
   gulp.watch('./test/**/*.js', ['test']);
-  //gulp.watch(['./src/main.less', './src/**/*.less'], ['styles']);
   gulp.watch(['./src/main.scss', './src/**/*.scss'], ['styles']);
   gulp.watch(['./src/*.html'], ['html']);
 });
