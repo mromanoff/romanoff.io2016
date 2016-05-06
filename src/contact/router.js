@@ -8,6 +8,7 @@ import HeaderService from '../header/service';
 import FooterService from '../footer/service';
 
 import IndexRoute from './index/route';
+import ShowRoute from './show/route';
 
 
 export default Router.extend({
@@ -40,11 +41,18 @@ export default Router.extend({
   },
 
   routes: {
-    'contact': 'index'
+    'contact': 'index',
+    'contact-show': 'show'
   },
 
   index: function() {
     return new IndexRoute({
+      container: this.container
+    });
+  },
+
+  show() {
+    return new ShowRoute({
       container: this.container
     });
   }
