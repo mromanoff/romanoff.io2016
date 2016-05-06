@@ -24,11 +24,18 @@
   }
 
   @include element('title') {
-    display: table;
+    font-size: $font-xl;
+    color: $color-white;
+    font-weight: 200;
+    padding: 15px 20px;
+    margin: 0;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 220px;
+    text-align: center;
 
     $transition: all;
     @include transition($transition);
@@ -39,13 +46,6 @@
       opacity: 0;
     }
 
-    color: $color-white;
-    font-weight: 200;
-    min-height: 125px;
-    padding: 15px 20px;
-    width: 220px;
-    text-align: center;
-
     small {
       display: block;
       font-size: $font-xs;
@@ -53,61 +53,50 @@
       margin: $margin-xs 0;
     }
 
-
     @include bp-more-than($medium-screen-min) {
-        font-size: $font-xl * 2.5;
-        min-height: 200px;
-        height: 200px;
-        width: 490px;
+        font-size: $font-xl * 1.5;
+        width: 600px;
         padding: 20px 20px;
     }
 
     @include bp-more-than($large-screen-min) {
       font-size: $font-xl * 2;
-      letter-spacing: 10px;
-      width: 600px;
+      width: 800px;
     }
-
-
   }
 
   @include element('navigation') {
     position: absolute;
-    width: 100%;
+    color: white;
+    width: 80px;
     height: 180px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    zoom: 1;
+    font-size: 56px;
+    @include opacity(0.8);
+    line-height: 180px;
+
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     z-index: 10;
 
-    > a {
-      position: absolute;
-      cursor: pointer;
-      color: white;
-      text-align: center;
-      display: inline-block;
-      padding: 0;
-      zoom: 1;
-      font-size: 56px;
-      @include opacity(0.8);
-      height: 180px;
-      width: 80px;
-      line-height: 180px;
 
-      $transition: color;
-      @include transition($transition);
+    $transition: color;
+    @include transition($transition);
 
-      &.next {
-        right: 0;
-      }
+    &:hover {
+      color: rgba(255, 255, 255, .5);
+    }
 
-      &.prev {
-        left: 0;
-      }
+    @include modifier('prev') {
+      left: 0;
+    }
 
-      &:hover {
-        color: rgba(255, 255, 255, .5);
-      }
+    @include modifier('next') {
+      right: 0;
     }
   }
 }

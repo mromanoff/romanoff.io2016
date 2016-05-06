@@ -17,13 +17,13 @@ export default CompositeView.extend({
 
   ui: {
     carousel: '[data-action="carousel"]',
-    next: '.next',
-    prev: '.prev'
+    next: '[data-action="next"]',
+    prev: '[data-action="prev"]'
   },
 
   events: {
-    'click .next': 'showNext',
-    'click .prev': 'showPrev'
+    'click @ui.next': 'showNext',
+    'click @ui.prev': 'showPrev'
   },
 
   onShow() {
@@ -33,12 +33,7 @@ export default CompositeView.extend({
       autoplay: true,
       dots: true,
       smartSpeed: 500,
-      autoplayHoverPause: true,
-
-
-
-      paginationSpeed: 500,
-      rewindSpeed: 1000
+      autoplayHoverPause: true
     });
   },
 

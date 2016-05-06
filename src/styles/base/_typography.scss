@@ -13,8 +13,15 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  // -webkit-font-smoothing: antialiased; // Don't do this: http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+  -webkit-font-smoothing: antialiased; // Don't do this: http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
   color: $base-font-color;
+
+
+
+
+
 }
 
 /* Headings
