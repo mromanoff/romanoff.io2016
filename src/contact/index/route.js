@@ -1,12 +1,12 @@
 /**
- * Contact Route
+ * Contact Index Route
  * @type {exports}
  */
 
 import {Route} from 'backbone-routing';
+
 import View from './view';
 import Model from '../model';
-
 
 export default Route.extend({
   initialize(options = {}) {

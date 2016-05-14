@@ -18,9 +18,9 @@ export default Application.extend({
     this.layout.render();
 
     this.listenTo(routerChannel, {
-      'before:enter:route' : this.onBeforeEnterRoute,
-      'enter:route'        : this.onEnterRoute,
-      'error:route'        : this.onErrorRoute
+      'before:enter:route': this.onBeforeEnterRoute,
+      'enter:route': this.onEnterRoute,
+      'error:route': this.onErrorRoute
     });
   },
 

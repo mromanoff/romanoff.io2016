@@ -4,6 +4,8 @@
  */
 
 import {Route} from 'backbone-routing';
+import Radio from 'backbone.radio';
+
 import HeroView from './hero/composite-view';
 import WorkView from './work/view';
 import PhotographyView from './photography/view';
@@ -14,6 +16,7 @@ import workStorage from '../work/storage';
 import photographyStorage from '../photography/storage';
 import codeStorage from './code/storage';
 
+let routerChannel = Radio.channel('router');
 
 let components = [
   'hero',
@@ -29,6 +32,8 @@ export default Route.extend({
   },
 
   fetch() {
+    routerChannel.trigger('before:enter:route');
+
     return Promise.all([
       heroStorage.findAll(),
       workStorage.findAll(),
@@ -40,6 +45,8 @@ export default Route.extend({
   },
 
   render() {
+    routerChannel.trigger('enter:route');
+
     this.heroView = new HeroView({
       collection: this.heroCollection
     });
