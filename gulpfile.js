@@ -35,7 +35,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('html', function () {
-  return gulp.src('./src/index.html')
+  return gulp.src('./src/*.html')
     .pipe(plumber())
     .pipe(gulp.dest('./dist'));
 });
