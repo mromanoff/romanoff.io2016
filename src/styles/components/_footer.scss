@@ -26,7 +26,7 @@
 
   li {
     display: inline-block;
-    margin: 0 $margin-xs;
+    margin: 0 $margin-sm;
   }
 
   @include element('social-icons') {

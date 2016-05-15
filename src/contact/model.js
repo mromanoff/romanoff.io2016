@@ -20,10 +20,6 @@ export default Model.extend({
   },
 
   url() {
-
-
-    //https://api.mongolab.com/api/1/databases/romanoff-io/collections/contact?apiKey=oOfu-DRx8fwXi9VifYrwAwgJGCBXT1_n
-
     return `${API.url}/api/${API.version}/databases/${API.database}/collections/${API.collection}?apiKey=${API.key}`;
   },
 
@@ -57,4 +53,5 @@ export default Model.extend({
 
     return errors.status === 1 ? errors : undefined;
   }
+
 });

@@ -70,6 +70,6 @@ export default Route.extend({
   },
 
   createCollection(collection, index) {
-    return this[`${components[index]}Collection`] = collection;
+    this[`${components[index]}Collection`] = collection;
   }
 });

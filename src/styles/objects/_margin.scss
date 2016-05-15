@@ -35,3 +35,8 @@ $margins: ('zero' $margin-zero),
     .margin-vertical--#{$margin-name} { margin: $margin-value 0 !important; }
     .margin-all--#{$margin-name} { margin: $margin-value !important; }
 }
+
+.margin-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
