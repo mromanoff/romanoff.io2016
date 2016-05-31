@@ -1,14 +1,7 @@
 Romanoff.io web site
 =================
 
-[![Dependency Status](https://david-dm.org/mromanoff/romanoff.io.svg?style=flat-square)](https://david-dm.org/mromanoff/romanoff.io)
-[![devDependency Status](https://david-dm.org/mromanoff/romanoff.io/dev-status.svg?style=flat-square)](https://david-dm.org/mromanoff/romanoff.io#info=devDependencies)
-
-
 WEB SITE: http://romanoff.io
-
-
-### TODO: ###
 
 This site build with:
 FrontEnd: BackboneJS, MarionetteJS, Underscore, jQuery, Gulp, Mocha, PostCSS, IcoMoon, Picturefill, ITCSS
